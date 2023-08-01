@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.main-container.darkness {
+    background-color: rgb(0, 0, 0);
+}
+
+.main-container.darkness .digital-container {
+    background-color: rgba(49, 49, 49, 0.829);
+    border-color: rgb(192, 192, 192);
+}
+
+.digital-container {
+    width: 60%;
+    height: 45%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.main-container.darkness .digital-clock {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.digital-clock {
+    width: 60%;
+    height: 55%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 7px;
+
+    box-shadow: 3px 3px 6px grey;
+}
+
+.main-container.darkness .hours,
+.main-container.darkness .min,
+.main-container.darkness .sec {
+    background-color: rgba(49, 49, 49, 0.829);
+
+}
+
+.hours,
+.min,
+.sec {
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.count {
+    font-size: 27px;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.text {
+    font-size: 13px;
+}
+
+.colon {
+    font-size: 27px;
+}
+
+.ampm {
+    position: absolute;
+    left: 630px;
+    top: 300px;
+    font-weight: bold;
+}
+
+.main-container.darkness .icons {
+    background-color: white;
+}
+
+.icons {
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 3px;
+    position: absolute;
+    right: 212px;
+    top: 185px;
+}
+
+.main-container.darkness .moon {
+    background: black;
+}
+
+.moon {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid;
+}
